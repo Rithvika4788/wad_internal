@@ -2,14 +2,10 @@ const http = require("http");
 const os = require("os");
 const path = require("path");
 const EventEmitter = require("events");
-
 const eventEmitter = new EventEmitter();
-
 eventEmitter.on("request_received", (url) => {
     console.log(`Request received for: ${url}`);
 });
-
-// 🔹 Common CSS
 const style = `
 <style>
     * {
